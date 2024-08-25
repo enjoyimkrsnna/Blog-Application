@@ -9,7 +9,7 @@ module.exports = {
     .otp {
       font-size: 24px;
       font-weight: bold;
-      color: #007bff;
+      color: #28a745;
     }
     .message {
       font-size: 16px;
@@ -19,29 +19,29 @@ module.exports = {
 </head>
 <body>
   <p class="message">
-    Hey there,
+    Hey there!
   </p>
   <p class="message">
-    Looks like you’ve misplaced your password – and we all know it’s not easy to find where you left it. Don’t worry, we’ve got your back!
+    We heard you lost your password – happens to the best of us! But no worries, we’ve got you covered.
   </p>
   <p class="message">
-    Here’s your magic OTP (One-Time Password), which is way cooler than a regular Number:
+    Here’s your special reset code (aka OTP):
+  </p>
+  <p class="otp">
+    ${otp}
   </p>
   <p class="message">
-    <span class="otp">${otp}</span>
+    You've got 10 minutes to use it, so don’t wait too long! After that, it’ll vanish like a Snapchat message.
   </p>
   <p class="message">
-    This OTP is like a superhero – it’s only good for the next 10 minutes. If it doesn’t get used in time, it’ll fly off into the digital sunset, never to be seen again.
+    If you didn’t ask for this, just forget it – we’re not trying to mess with your day. 
   </p>
   <p class="message">
-    If this email found its way to you by mistake, just ignore it. No harm done. But if you’re ready to reset your password, make sure you use this OTP before it goes on vacation!
+    Take care and happy resetting!
   </p>
   <p class="message">
-   Happy Resetting!
-  </p>
-  <p class="message">
-    Kind regards,<br>
-    Dreams International Team
+    Kind Regards,<br>
+    The Dreams International Team
   </p>
 </body>
 </html>
