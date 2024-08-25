@@ -6,7 +6,7 @@ This application is a full-featured blog management system built using **Express
 
 ### Features
 
-- **User Authentication**: Users can register, login, and logout using secure authentication techniques.
+- **User Authentication**: Users can register, login, and logout.
 - **Blog Management**: Users can create, edit, update, delete, and search for blogs.
 - **Commenting**: Add comments to blog posts.
 - **File Uploads**: Upload images associated with blog posts using Multer.
@@ -78,7 +78,7 @@ The server will start running at `http://localhost:3000`.
 - `GET /blogs/new`: Renders a form for creating a new blog post.
 - `POST /blogs/new`: Creates a new blog post (requires authentication).
 - `GET /blogs`: Fetches all blog posts.
-- `GET /blogs/:id`: Fetches a blog post by its ID.
+- `GET /blogs/:id`: Fetches a blog post by its ID (requires authentication).
 - `GET /blogs/edit/:id`: Renders an edit form for an existing blog post (requires authentication).
 - `POST /blogs/update/:id`: Updates a blog post by its ID (requires authentication).
 - `DELETE /blogs/:id`: Deletes a blog post by its ID (requires authentication).
@@ -143,8 +143,35 @@ The server will start running at `http://localhost:3000`.
 
 ## Screenshots
 
-1. **Homepage**:
-2. **Blog Creation**: 
-3. **Comments Section**:
-4. **Forgot Password**: 
+## Homepage:
+
+## Without Login
+   
+![image](https://github.com/user-attachments/assets/fbad8392-3b7d-4359-beaa-6258954e4283)
+
+## With Login 
+
+![image](https://github.com/user-attachments/assets/7d23bb54-bd92-4d97-a8ca-30d1b051737e)
+
+## Login , Registration and forgot Password:
+
+![image](https://github.com/user-attachments/assets/7d98f948-909c-4cca-a9d4-3df8fecc9467)
+![image](https://github.com/user-attachments/assets/41f7d387-84f7-4d0e-bf34-b454e96e76a6)
+![image](https://github.com/user-attachments/assets/b6c4927f-33e2-4ed0-9846-b7fa5bc2a76f)
+![image](https://github.com/user-attachments/assets/3e508ffb-368a-482b-b3a4-465414f4aea6)
+![Simage](https://github.com/user-attachments/assets/2011252c-b769-4225-b962-4c4f98a55bdb)
+![Screenshot](https://github.com/user-attachments/assets/d36ef99f-73b1-4d92-aef8-1a6907767a13)
+
+## Blog Creation:
+   
+![image](https://github.com/user-attachments/assets/5f7f1eb1-e9d1-4fb8-a014-aa8817df4d16)
+
+## Read Blog & Comments:
+![image](https://github.com/user-attachments/assets/3cc31b4c-83f0-4e45-a79b-273b5f077869)
+![image](https://github.com/user-attachments/assets/e4d80c19-5a39-4b28-9cbe-fc30d45592d8)
+
+## Updating and deleting a blog
+![image](https://github.com/user-attachments/assets/72d1dea0-bd00-4ddc-b2fe-5e8ec3f54ac8)
+![image](https://github.com/user-attachments/assets/720f6642-9798-4e6a-aec7-82e68caef843)
+ 
 
