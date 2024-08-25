@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/c07586b6-a7cf-4045-b7fe-c067bb90856f)## Dreams International Blog Application
+## Dreams International Blog Application
 
 ### Description
 
@@ -145,9 +145,9 @@ The server will start running at `http://localhost:3000`.
 
 ## Homepage:
 
-   ## Without Login
+## Without Login
    
-  ![image](https://github.com/user-attachments/assets/fbad8392-3b7d-4359-beaa-6258954e4283)
+![image](https://github.com/user-attachments/assets/fbad8392-3b7d-4359-beaa-6258954e4283)
 
 ## With Login 
 
