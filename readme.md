@@ -143,13 +143,11 @@ The server will start running at `http://localhost:3000`.
 
 ## Screenshots
 
-## Homepage:
-
-## Without Login
+## Homepage Without Login
    
 ![image](https://github.com/user-attachments/assets/fbad8392-3b7d-4359-beaa-6258954e4283)
 
-## With Login 
+## Homepage With Login 
 
 ![image](https://github.com/user-attachments/assets/7d23bb54-bd92-4d97-a8ca-30d1b051737e)
 
