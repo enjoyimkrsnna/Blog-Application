@@ -6,7 +6,7 @@ This application is a full-featured blog management system built using **Express
 
 ### Features
 
-- **User Authentication**: Users can register, login, and logout using secure authentication techniques.
+- **User Authentication**: Users can register, login, and logout.
 - **Blog Management**: Users can create, edit, update, delete, and search for blogs.
 - **Commenting**: Add comments to blog posts.
 - **File Uploads**: Upload images associated with blog posts using Multer.
