@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title><%= title %></title>
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/css/header.css">
+  <link rel="stylesheet" href="/css/blogDetails.css">
+  
+</head>
+<body>
+  <%- include('partials/header') %>
+
+  <main class="book-page">
+    <% if (blog.image) { %>
+      <img src="<%= blog.image %>" alt="<%= blog.title %>" class="story-image">
+    <% } %>
+    <h1 class="story-title"><%= blog.title %></h1>
+    <p class="story-content-text"><%= blog.content %></p>
+    
+    <% if (user) { %>
+      <form action="/api/v1/comments/add/<%= blog._id %>" method="POST">
+        <div class="form-group">
+          <textarea name="content" class="form-control" placeholder="Drop a comment here..." required></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Add Comment</button>
+      </form>
+    <% } else { %>
+      <p><a href="/auth/login">Log in</a> to post a comment.</p>
+    <% } %>
+
+    <div class="comments-section">
+      <br>
+      <h2>Comments</h2>
+      <div id="comments">
+        <% if (comments.length > 0) { %>
+          <% comments.forEach(comment => { %>
+            <div class="comment">
+              <p><strong><%= comment.author.username %></strong>: <%= comment.content %> 
+               <br> <small>Posted on <%= comment.createdAt.toLocaleDateString() %></small>
+              </p>
+            
+            </div>
+          <% }) %>
+        <% } else { %>
+          <p>No comments yet. Be the first to comment!</p>
+        <% } %>
+      </div>
+    </div>
+  </main>
+
+ 
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

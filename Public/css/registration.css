@@ -1,0 +1,63 @@
+body {
+  background-color: #343a40;
+  color: #ffffff;
+}
+
+.card {
+border: none;
+border-radius: 10px;
+box-shadow: 0 4px 8px rgba(243, 241, 241, 0.1);
+}
+
+.card-body {
+padding: 2rem;
+color: black;
+}
+
+h1 {
+color: white;
+}
+
+.alert {
+margin-bottom: 1rem;
+}
+
+.form-control-lg {
+font-size: 1.1rem;
+padding: 0.75rem 1.25rem;
+}
+
+.btn-lg {
+font-size: 1.1rem;
+padding: 0.75rem;
+}
+
+@media (max-width: 991px) {
+.container {
+  padding: 0 1rem;
+}
+
+.card {
+  border-radius: 8px;
+}
+
+.form-control-lg, .btn-lg {
+  font-size: 1rem;
+  padding: 0.5rem;
+}
+}
+
+@media (max-width: 767px) {
+.card-body {
+  padding: 1.5rem;
+}
+
+.form-control-lg, .btn-lg {
+  font-size: 0.9rem;
+  padding: 0.5rem;
+}
+
+.text-center p {
+  font-size: 0.9rem;
+}
+}

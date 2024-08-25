@@ -1,0 +1,41 @@
+
+body {
+    background-color: #343a40;
+    padding-top: 56px; 
+  }
+  
+  .container {
+    margin-top: 5rem;
+  }
+  
+  .alert {
+    border-radius: 10px;
+    padding: 2rem;
+  }
+  
+  h1 {
+    color: #721c24;
+  }
+  
+  .btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+  }
+  
+  .btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #004085;
+  }
+  
+
+  @media (max-width: 767px) {
+    .alert {
+      padding: 1.5rem;
+    }
+  
+    .btn-primary {
+      font-size: 0.9rem;
+      padding: 0.5rem 1rem;
+    }
+  }
+  
