@@ -12,11 +12,8 @@ const commentsRoutes = require('./routes/comments');
 const loggedinMiddleware = require('./middleware/LoggedIn.middleware.js')
 const mailRoutes = require('./routes/mailRoute.js')
 
-// Initialize Express app
 const app = express();
 const PORT = process.env.PORT || 3000;
-
-// Connect to MongoDB
 connectDB();
 
 // Middleware
@@ -25,14 +22,11 @@ app.use(express.json());
 app.use(cookieParser());
 app.use('/uploads', express.static(path.join(__dirname, 'Public', 'uploads')));
 app.use(express.static(__dirname + '/Public'));
-
+app.use(loggedinMiddleware)
 
 // EJS setup
 app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, 'views'));
-
-// Middleware to check user details and requests
-app.use(loggedinMiddleware)
 
 
 // Routes
@@ -61,7 +55,6 @@ app.use((req, res) => {
   res.status(404).render('error', { message: 'Page not found' });
 });
 
-// Start server
 app.listen(PORT, () => {
   console.log(`Server is running on http://localhost:${PORT}`);
 });
