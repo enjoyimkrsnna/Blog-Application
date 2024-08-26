@@ -165,8 +165,9 @@ The server will start running at `http://localhost:3000`.
 ![image](https://github.com/user-attachments/assets/5f7f1eb1-e9d1-4fb8-a014-aa8817df4d16)
 
 ## Read Blog & Comments:
-![image](https://github.com/user-attachments/assets/3cc31b4c-83f0-4e45-a79b-273b5f077869)
-![image](https://github.com/user-attachments/assets/e4d80c19-5a39-4b28-9cbe-fc30d45592d8)
+![image](https://github.com/user-attachments/assets/b2a00485-304b-4367-a328-8eebc79d08a7)
+![image](https://github.com/user-attachments/assets/87eadbc5-46b2-4190-bca4-a76c9682d764)
+
 
 ## Updating and deleting a blog
 ![image](https://github.com/user-attachments/assets/72d1dea0-bd00-4ddc-b2fe-5e8ec3f54ac8)
