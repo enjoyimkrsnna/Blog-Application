@@ -1,4 +1,4 @@
-## Dreams International Blog Application
+##Blog Application
 
 ### Description
 
